@@ -7,6 +7,62 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="bin\Debug\Carte\0.png" />
+    <Content Include="bin\Debug\Carte\1.png" />
+    <Content Include="bin\Debug\Carte\10.png" />
+    <Content Include="bin\Debug\Carte\11.png" />
+    <Content Include="bin\Debug\Carte\12.png" />
+    <Content Include="bin\Debug\Carte\13.png" />
+    <Content Include="bin\Debug\Carte\14.png" />
+    <Content Include="bin\Debug\Carte\15.png" />
+    <Content Include="bin\Debug\Carte\16.png" />
+    <Content Include="bin\Debug\Carte\17.png" />
+    <Content Include="bin\Debug\Carte\18.png" />
+    <Content Include="bin\Debug\Carte\19.png" />
+    <Content Include="bin\Debug\Carte\2.png" />
+    <Content Include="bin\Debug\Carte\20.png" />
+    <Content Include="bin\Debug\Carte\21.png" />
+    <Content Include="bin\Debug\Carte\22.png" />
+    <Content Include="bin\Debug\Carte\23.png" />
+    <Content Include="bin\Debug\Carte\24.png" />
+    <Content Include="bin\Debug\Carte\25.png" />
+    <Content Include="bin\Debug\Carte\26.png" />
+    <Content Include="bin\Debug\Carte\27.png" />
+    <Content Include="bin\Debug\Carte\28.png" />
+    <Content Include="bin\Debug\Carte\29.png" />
+    <Content Include="bin\Debug\Carte\3.png" />
+    <Content Include="bin\Debug\Carte\30.png" />
+    <Content Include="bin\Debug\Carte\31.png" />
+    <Content Include="bin\Debug\Carte\32.png" />
+    <Content Include="bin\Debug\Carte\33.png" />
+    <Content Include="bin\Debug\Carte\34.png" />
+    <Content Include="bin\Debug\Carte\35.png" />
+    <Content Include="bin\Debug\Carte\36.png" />
+    <Content Include="bin\Debug\Carte\37.png" />
+    <Content Include="bin\Debug\Carte\38.png" />
+    <Content Include="bin\Debug\Carte\39.png" />
+    <Content Include="bin\Debug\Carte\4.png" />
+    <Content Include="bin\Debug\Carte\40.png" />
+    <Content Include="bin\Debug\Carte\41.png" />
+    <Content Include="bin\Debug\Carte\42.png" />
+    <Content Include="bin\Debug\Carte\43.png" />
+    <Content Include="bin\Debug\Carte\44.png" />
+    <Content Include="bin\Debug\Carte\45.png" />
+    <Content Include="bin\Debug\Carte\46.png" />
+    <Content Include="bin\Debug\Carte\47.png" />
+    <Content Include="bin\Debug\Carte\48.png" />
+    <Content Include="bin\Debug\Carte\49.png" />
+    <Content Include="bin\Debug\Carte\5.png" />
+    <Content Include="bin\Debug\Carte\50.png" />
+    <Content Include="bin\Debug\Carte\51.png" />
+    <Content Include="bin\Debug\Carte\52.png" />
+    <Content Include="bin\Debug\Carte\6.png" />
+    <Content Include="bin\Debug\Carte\7.png" />
+    <Content Include="bin\Debug\Carte\8.png" />
+    <Content Include="bin\Debug\Carte\9.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -19,6 +75,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\netcoreapp3.1\" />
   </ItemGroup>
 
 </Project>
