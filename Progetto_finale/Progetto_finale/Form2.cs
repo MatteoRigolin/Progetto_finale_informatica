@@ -295,7 +295,7 @@ namespace Progetto_finale
             for (int i = 0; i < ManoGiocatore.Length; i++)//display carte in mano al giocatore
             {
                 var nuovaPictureBox = new PictureBox();
-                int x = 210 + (116 * i);
+                int x = 110 + (116 * i);
                 int y = 510;
                 nuovaPictureBox.Width = 110;
                 nuovaPictureBox.Height = 170;
@@ -309,7 +309,7 @@ namespace Progetto_finale
             for (int i = 0; i < ManoBot.Length; i++)//display carte in mano al bot
             {
                 var nuovaPictureBox = new PictureBox();
-                int x = 210 + (116 * i);
+                int x = 110 + (116 * i);
                 int y = 70;
                 nuovaPictureBox.Width = 110;
                 nuovaPictureBox.Height = 170;
@@ -350,16 +350,30 @@ namespace Progetto_finale
         }
         public void TurnoGiocatore()//turno del giocatore
         {
-
+            
         }
         public void PescaCarta()//funzione per pescare
         {
-            Array.Resize(ref ManoGiocatore, ManoGiocatore.Length + 1);//aumento la lunghezza della mano
-            ManoGiocatore[ManoGiocatore.Length - 1] = MazzoPesca[MazzoPesca.Length - 1]; //il nuovo spazio diventa uguale alla carta in cima al mazzo pesca
-            MazzoPesca[MazzoPesca.Length - 1] = null;//la carta pescata nel mazzo pesca diventa uno spazio vuoto
-            Array.Resize(ref MazzoPesca, MazzoPesca.Length - 1); //il mazzo pesca viene accorciato di uno spazio
-            MostraManoGiocatore(); //rieseguo il diplay della mano
-            MostraMazzoPesca(); //rieseguo il display del mazzo pesca
+            if (MazzoPesca.Length == 0)
+            {
+                MessageBox.Show("Pareggio!\nNon ci sono più carte nel mazzo");
+            }
+            else
+            {
+                if (ManoGiocatore.Length < 10)
+                {
+                    Array.Resize(ref ManoGiocatore, ManoGiocatore.Length + 1);//aumento la lunghezza della mano
+                    ManoGiocatore[ManoGiocatore.Length - 1] = MazzoPesca[MazzoPesca.Length - 1]; //il nuovo spazio diventa uguale alla carta in cima al mazzo pesca
+                    MazzoPesca[MazzoPesca.Length - 1] = null;//la carta pescata nel mazzo pesca diventa uno spazio vuoto
+                    Array.Resize(ref MazzoPesca, MazzoPesca.Length - 1); //il mazzo pesca viene accorciato di uno spazio
+                    MostraManoGiocatore(); //rieseguo il diplay della mano
+                    MostraMazzoPesca(); //rieseguo il display del mazzo pesca
+                }
+                else
+                {
+                    MessageBox.Show("Non puoi più pescare carte\nla tua mano è piena");
+                }
+            }
         }
 
         private void passaturnoBtn_Click(object sender, EventArgs e)//bottone passa il turno
